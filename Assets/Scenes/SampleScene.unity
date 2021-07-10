@@ -895,6 +895,7 @@ GameObject:
   - component: {fileID: 984086890}
   - component: {fileID: 984086889}
   - component: {fileID: 984086893}
+  - component: {fileID: 984086895}
   - component: {fileID: 984086894}
   m_Layer: 0
   m_Name: FallingObject
@@ -1005,6 +1006,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f76b324d9bc518a4b903550665e643a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elapseTime: 3
+--- !u!114 &984086895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984086888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c35557fd89fb8f4794f1fddbe94e0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1202949062
