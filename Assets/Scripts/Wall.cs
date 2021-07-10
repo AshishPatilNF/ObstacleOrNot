@@ -7,5 +7,8 @@ public class Wall : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         GetComponent<MeshRenderer>().material.color = Color.yellow;
+
+        if (collision.gameObject.GetComponent<Player>())
+            collision.gameObject.GetComponent<Player>().AddScore();
     }
 }

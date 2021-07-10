@@ -8,6 +8,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     float speed = 5f;
 
+    [SerializeField]
+    int score = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +30,10 @@ public class Player : MonoBehaviour
         Vector3 move = new Vector3(horizontalInput, 0, verticalInput);
 
         transform.Translate(speed * Time.deltaTime * move);
+    }
+
+    public void AddScore()
+    {
+        score++;
     }
 }
