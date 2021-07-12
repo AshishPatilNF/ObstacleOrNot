@@ -11,10 +11,13 @@ public class Player : MonoBehaviour
     [SerializeField]
     int score = 0;
 
+    UIManager uiManager;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        uiManager = FindObjectOfType<UIManager>();
+        uiManager.ScoreUpdate(score);
     }
 
     // Update is called once per frame
@@ -35,5 +38,6 @@ public class Player : MonoBehaviour
     public void AddScore()
     {
         score++;
+        uiManager.ScoreUpdate(score);
     }
 }
