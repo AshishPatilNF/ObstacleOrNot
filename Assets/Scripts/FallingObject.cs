@@ -18,6 +18,7 @@ public class FallingObject : MonoBehaviour
         render = GetComponent<MeshRenderer>();
         rigidBody.useGravity = false;
         render.enabled = false;
+        elapseTime += Time.time;
     }
 
     // Update is called once per frame
